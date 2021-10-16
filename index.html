@@ -184,6 +184,7 @@ html, body {
     top: 0;
     bottom: 0;
     z-index: -1;
+    display: block;
   }
 /* Wish */
 .wish-content {
@@ -215,7 +216,7 @@ html, body {
         <lottie-player class="pump" src="https://assets1.lottiefiles.com/packages/lf20_prpslttf.json" background="transparent"  speed="0.8" loop  autoplay></lottie-player>
     </div>
     <div class="video">
-        <video id="background-video" autoplay loop muted poster="./assets/images/memories/hand.JPG">
+        <video id="background-video" autoplay loop muted playsinline poster="./assets/images/memories/hand.JPG">
             <source src="./assets/images/memories/video.mp4" type="video/mp4">
           </video>
     </div>
