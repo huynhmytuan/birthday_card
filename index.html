@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<link rel="shortcut icon" href="./assets/images/icon/icon.png">
+<title>Happy Birthday</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Ballet&family=Gluten:wght@200&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Amatic SC', cursive;
+}
+
+html, body {
+    margin:0;
+    height:100%;
+}
+
+/* PC */
+@media (min-width: 1024px) {
+    .gift-card{
+        justify-content: space-between;
+    }
+    .gift-card .pump{
+        width: 300px;
+    }
+    .gift-card .gift-image{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        bottom: -150px;
+        left: calc(50% - 150px);
+    }
+    .gift-card .text{
+        margin-top: 150px;
+    }
+    .gift-card .title-1{
+        font-size: 50pt;
+    }
+    .gift-card .title-2{
+        font-size: 40pt;
+    }
+    .gift-card .age{
+        font-size: 100pt;
+    }
+    /* Wish */
+    .wish-content{
+        padding: 100px 10% 100px 10%;
+    }
+    .wish-content .title{
+        font-size: 50pt;
+    }
+    .wish-content .content{
+        font-size: 20pt;
+    }
+    .wish-content .sign{
+        font-size: 30pt;
+    }
+}
+
+/* Tablet */
+@media(min-width: 740px) and (max-width: 1023px){
+    .gift-card{
+        justify-content: space-between;
+    }
+    .gift-card .gift-image{
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        bottom: -150px;
+        left: calc(50% - 150px);
+    }
+    .gift-card .pump{
+        width: 230px;
+    }
+    .gift-card .text{
+        margin-top: 100px;
+    }
+    .gift-card .title-1{
+        font-size: 40pt;
+    }
+    .gift-card .title-2{
+        font-size: 40pt;
+    }
+    .gift-card .age{
+        font-size: 100pt;
+    }
+    /* Wish */
+    .wish-content{
+        padding: 100px 10% 100px 10%;
+    }
+    .wish-content .title{
+        font-size: 50pt;
+    }
+    .wish-content .content{
+        font-size: 18pt;
+    }
+    .wish-content .sign{
+        font-size: 30pt;
+    }
+}
+/* Mobile */
+@media (max-width: 740px){
+    .gift-card{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .gift-card .gift-image{
+        width: 250px;
+        height: 250px;
+        margin: 20px auto 50px auto;
+    }
+    .gift-card .pump{
+        display: none;
+    }
+    .gift-card .title-1{
+        font-size: 50pt;
+    }
+    .gift-card .title-2{
+        font-size: 40pt;
+    }
+    .gift-card .age{
+        font-size: 100pt;
+    }
+    /* Wish */
+    .wish-content{
+        padding: 20px 20px 20px 20px;
+    }
+    .wish-content .title{
+        font-size: 30pt;
+    }
+    .wish-content .content{
+        font-size: 16pt;
+    }
+    .wish-content .sign{
+        font-size: 30pt;
+    }
+}
+.text-rainbow {
+    background: linear-gradient(to right, #ff0000 0%, #00d9ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.column{
+    display: inline-block;
+    width: calc(100%/3);
+}
+.gift-card{
+    border: 10px dashed white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: #ff9ec9;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.gift-card .gift-image{
+    background-color: white;
+    border-radius: 150px;
+}
+.gift-card .title-1,.title-2,.age{
+    margin: 0;
+}
+/* Video */
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+/* Wish */
+.wish-content {
+    background: rgba(0, 0, 0, 0.5);
+    text-align: center;
+    color: white;
+}
+.wish-content .content{
+    margin-top: 0;
+    font-family: 'Gluten', cursive;
+    line-height: 150%;
+}
+.wish-content .sign{
+    font-family: 'Ballet', cursive;
+}
+</style>
+<script src=""></script>
+<body >
+    <div class="gift-card">
+        <lottie-player class="gift-image" src="https://assets1.lottiefiles.com/datafiles/zc3XRzudyWE36ZBJr7PIkkqq0PFIrIBgp4ojqShI/newAnimation.json"  background="transparent"  speed="0.5"   loop  autoplay></lottie-player>
+        <lottie-player class="pump" src="https://assets1.lottiefiles.com/packages/lf20_prpslttf.json" background="transparent"  speed="0.8" loop  autoplay></lottie-player>
+        <div class="text">
+            <p class="title-1">MỪNG SINH NHẬT</p>
+            <p class="age">17 </p>
+            <p class="content" >tuổi</p>
+            <p class="title-2">Bé Baobei</p>
+            <p class="content" >17/10/2004 - 17/10/2021</p>
+        </div>
+        <lottie-player class="pump" src="https://assets1.lottiefiles.com/packages/lf20_prpslttf.json" background="transparent"  speed="0.8" loop  autoplay></lottie-player>
+    </div>
+    <div class="video">
+        <video id="background-video" autoplay loop muted poster="./assets/images/memories/hand.JPG">
+            <source src="./assets/images/memories/video.mp4" type="video/mp4">
+          </video>
+    </div>
+    <div class="wish-content">
+        <p class="title text-rainbow">
+            HAPPY BIRTHDAY
+        </p>
+        <p class="content">
+            1 năm nữa đã qua, giờ lại đến sinh nhật của bé baobei rồi này!
+            Anh chúc bé của anh thêm tuổi mới ngày thêm xinh đẹp và luôn giữ được nụ cười trên môi nhé. 
+            Cứ sống là chính mình và luôn giữ được tinh thần lạc quan và mãi hạnh phúc nhá.
+            <br>
+            Đừng mãi tự ti về bản thân vì em tuyệt vời hơn em nghĩ rất rất là nhiều luôn đó nha.
+            Em cũng không cần sợ bất cứ điều gì, đừng ngại thử những điều mới mẻ. 
+            <br>
+            Có thể những việc em nghĩ đến thấy rất khó khăn và cứ nghĩ mình không làm được, nhưng chưa thử thì làm sao biết được đúng không nào?!
+            <br>
+            Hãy thử làm mọi thứ và mình thích và cố gắng hết mình với nó
+            thì dù thành công hay thất bại đi chăng nữa, em cũng sẽ rất vui khi nhìn lại đấy! 
+            <br>Đừng để sau này nhìn lại và hối tiếc vì khi ấy không đủ can đảm để làm nhé.
+            <br>
+            <b style="font-size: 30pt;">Be Strong, Be Yourself!!</b>
+            <br> 
+            Anh yêu baobei nhiều 💗,
+        </p>
+        <p class="sign">
+            Hmt
+        </p>
+        <p class="content">Huỳnh Mỹ Tuân</p>
+    </div>
+</body>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</html>
